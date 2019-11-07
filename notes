@@ -1,0 +1,20 @@
+Setup virtual environment, used for managing dependencies:
+    python -m venv venv
+
+Activate virtual environment:
+    venv\Scripts\activate.bat
+
+After activating virtual environment:
+
+    Install Django: pip install Django
+
+    Creating Django project: django-admin startproject [project-name]
+
+    Run project: python manage.py runserver
+
+    Creating Django app: python manage.py startapp [app-name]
+    Install Django app to project: Add the app-name to the project settings file in INSTALLED-APPS list
+
+    Connect app Urls to project:
+        1. Include the urls (look in urls.py of project)
+        2. Create urls.py:  echo> [app-folder-name]/urls.py (like 'touch', but touch doesn't work in Windows)
